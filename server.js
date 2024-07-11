@@ -19,7 +19,7 @@ app.post('/signup', (req, res) => {
     const { email } = req.body;
 
     // URL provided by Zapier for webhooks
-    const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/19332064/23pw97n/'; 
+    const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/19332064/23penfq/'; 
 
     axios.post(zapierWebhookUrl, { email })
         .then(response => {
